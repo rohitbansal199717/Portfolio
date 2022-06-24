@@ -577,7 +577,7 @@ $(document).ready(function() {
               $('.swiper-slide1').each(function () {
                   var youtubePlayer = $(this).find('iframe').get(0);
                   if (youtubePlayer) {
-                  	console.log(youtubePlayer)
+                  	
                     youtubePlayer.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
                   }
               });
